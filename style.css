@@ -1,0 +1,127 @@
+body {
+    background-color: #001514; /* Cor de fundo escura */
+    color: #fff; /* Texto padrão em cor clara */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4b576b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #3E6680;
+}
+
+header h1 {
+    color: #fff; /* Cor metálica para o título */
+    font-size: 2.5em;
+    margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Cor metálica clara para links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #abafb6; /* Cor metálica dourada ao passar o mouse */
+}
+
+section p {
+    padding: 80px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #4b576b;
+    border: 1px solid #4b576b;
+}
+
+h2 {
+    color: #fff; /* Cor metálica para títulos de seção */
+    font-size: 2em;
+}
+
+
+.projeto {
+    margin: 10px 0;
+    padding: 0px;
+    background-color: #0D160B;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #4b576b;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #0D160B; /*borda da ultima*/
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: large;
+    
+}
+
+
+section .projeto {
+    padding: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.imagem-redonda {
+    width: 350px; /* Ajuste o tamanho conforme necessário */
+    height: 350px; /* Deve ser igual à largura para manter a proporção */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    overflow: hidden; /* Garante que a imagem se ajuste ao contorno */
+    float: left;
+    position: relative;
+    top: 0px;
+    margin: 10;
+
+    
+}
+.imagem-link {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem-link img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.imagem-link img:hover {
+    transform: scale(1.05);
+}
