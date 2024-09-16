@@ -12,14 +12,16 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #3E6680;
+    text-shadow: 3px, 3px, 3px, black; /*sombra de texto*/
 }
 
 header h1 {
     color: #fff; /* Cor metálica para o título */
     font-size: 2.5em;
     margin: 0;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif; /* Fonte do primeiro texto */
     text-align: left;
+    text-shadow: 2px, 2px, 0px, black;
 }
 
 nav ul {
@@ -27,7 +29,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: right;
+    justify-content: right; /* sombra de texto */
     
 }
 
@@ -75,20 +77,6 @@ h2 {
     border-radius: 10px;
 }
 
-footer {
-    background-color: #4b576b;
-    text-align: center;
-    padding: 10px;
-    border-top: 2px solid #0D160B; /*borda da ultima*/
-}
-
-footer p {
-    margin: 0;
-    color: #fff;
-    font-size: large;
-    
-}
-
 
 section .projeto {
     padding: 0px;
@@ -108,12 +96,13 @@ section .projeto {
     top: 0px;
     margin: 10;
 
-    
 }
+
 .imagem-link {
     text-align: center;
     margin: 20px 0;
 }
+
 
 .imagem-link img {
     width: 300px; /* Ajuste o tamanho conforme necessário */
@@ -122,6 +111,22 @@ section .projeto {
     transition: transform 0.3s;
 }
 
+
 .imagem-link img:hover {
     transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #4b576b;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #0D160B; /*borda da ultima*/
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: large;
+    
 }
