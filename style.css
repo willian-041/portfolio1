@@ -1,6 +1,8 @@
 body {
-    background-color: #001514; /* Cor de fundo escura */
-    color: #fff; /* Texto padrão em cor clara */
+    background-color: #001514;
+    /* Cor de fundo escura */
+    color: #fff;
+    /* Texto padrão em cor clara */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,18 +10,21 @@ body {
 }
 
 header {
-    background-color: #4b576b;
+    background-color: #29313e;
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #3E6680;
-    text-shadow: 3px, 3px, 3px, black; /*sombra de texto*/
+    text-shadow: 3px, 3px, 3px, black;
+    /*sombra de texto*/
 }
 
 header h1 {
-    color: #fff; /* Cor metálica para o título */
+    color: #fff;
+    /* Cor metálica para o título */
     font-size: 2.5em;
     margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif; /* Fonte do primeiro texto */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* Fonte do primeiro texto */
     text-align: left;
     text-shadow: 2px, 2px, 0px, black;
 }
@@ -29,8 +34,9 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: right; /* sombra de texto */
-    
+    justify-content: right;
+    /* sombra de texto */
+
 }
 
 nav li {
@@ -39,32 +45,35 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Cor metálica clara para links */
+    color: #fff;
+    /* Cor metálica clara para links */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #abafb6; /* Cor metálica dourada ao passar o mouse */
+    color: #abafb6;
+    /* Cor metálica dourada ao passar o mouse */
 }
 
 section p {
     padding: 80px;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+
 }
 
 section {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    background-color: #4b576b;
-    border: 1px solid #4b576b;
+    background-color: #29313e;
+    border: 1px solid #29313e;
 }
 
 h2 {
-    color: #fff; /* Cor metálica para títulos de seção */
+    color: #fff;
+    /* Cor metálica para títulos de seção */
     font-size: 2em;
 }
 
@@ -87,10 +96,14 @@ section .projeto {
 
 
 .imagem-redonda {
-    width: 350px; /* Ajuste o tamanho conforme necessário */
-    height: 350px; /* Deve ser igual à largura para manter a proporção */
-    border-radius: 50%; /* Deixa a imagem redonda */
-    overflow: hidden; /* Garante que a imagem se ajuste ao contorno */
+    width: 300px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 300px;
+    /* Deve ser igual à largura para manter a proporção */
+    border-radius: 50%;
+    /* Deixa a imagem redonda */
+    overflow: hidden;
+    /* Garante que a imagem se ajuste ao contorno */
     float: left;
     position: relative;
     top: 0px;
@@ -105,7 +118,8 @@ section .projeto {
 
 
 .imagem-link img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 300px;
+    /* Ajuste o tamanho conforme necessário */
     border: 2px solid #fff;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -121,12 +135,67 @@ footer {
     background-color: #4b576b;
     text-align: center;
     padding: 10px;
-    border-top: 2px solid #0D160B; /*borda da ultima*/
+    border-top: 2px solid #0D160B;
+    /*borda da ultima*/
 }
 
 footer p {
     margin: 0;
     color: #fff;
     font-size: large;
-    
+
+}
+
+.hidden {
+    display: none;
+}
+
+#skill-popup {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    grid-template-columns: repeat(3, 1fr);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: auto;
+    max-width: 80vw;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#skill-popup.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#skill-popup ul {
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#skill-popup li img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 4px;
+    background-color: white;
+    padding: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    #skill-popup li img {
+        max-width: 40px;
+    }
 }
