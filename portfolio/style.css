@@ -1,0 +1,302 @@
+:root {
+    --bg-main: #0b132b;
+    --bg-card: #1c2541;
+    --bg-header: #111d4a;
+    --accent: #00b4d8;
+    --accent-glow: #90e0ef;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #2e3a59;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+}
+
+header {
+    background-color: rgba(17, 29, 74, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffffff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    font-size: 0.82em;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+/* IMPORTANTE: Permite que os popups fiquem alinhados com cada link */
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95em;
+    transition: all 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 1050px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: var(--bg-card);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.imagem-redonda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.3);
+}
+
+.texto-sobre h2 {
+    font-size: 1.8em;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.texto-sobre p {
+    margin-bottom: 14px;
+    color: #cbd5e1;
+    font-size: 1em;
+}
+
+.destaque-dados {
+    background-color: rgba(0, 180, 216, 0.08);
+    padding: 14px 18px;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--text-primary);
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cards-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: var(--bg-card);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.skill-card h3 {
+    color: var(--accent);
+    font-size: 1.15em;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: var(--text-secondary);
+    font-size: 0.92em;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.projeto-card {
+    background-color: var(--bg-card);
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 25px rgba(0, 180, 216, 0.15);
+}
+
+.projeto-card h3 {
+    color: var(--text-primary);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    color: var(--text-secondary);
+    font-size: 0.93em;
+    margin-bottom: 18px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: rgba(0, 180, 216, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    font-size: 0.78em;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: var(--bg-header);
+    text-align: center;
+    padding: 22px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 60px;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+/* Popups posicionados diretamente no menu */
+.hidden {
+    display: none !important;
+}
+
+#skill-popup, #contato-popup {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    min-width: 220px;
+}
+
+#skill-popup p, #contato-popup p {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.8em;
+    border: 1px solid var(--border-color);
+}
+
+#contato-popup ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#contato-popup a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+#contato-popup a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .destaque-dados {
+        border-left: none;
+        border-top: 3px solid var(--accent);
+        border-radius: 8px;
+    }
+
+    #skill-popup, #contato-popup {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

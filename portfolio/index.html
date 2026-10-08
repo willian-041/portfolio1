@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian Arf | Desenvolvimento & Dados</title>
+    <link rel="shortcut icon" href="arquivos/favicon.ico" type="image/x-icon">
+    <!-- Fonte Inter para tipografia profissional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>WILLIAN ARF</h1>
+            <span>Desenvolvedor Full-Stack | Entusiasta da Área de Dados</span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="skill-link">Skills</a>
+                    <div id="skill-popup" class="hidden">
+                        <p>Tech Stack:</p>
+                        <ul class="skills-grid">
+                            <li><span class="badge">Java</span></li>
+                            <li><span class="badge">JavaScript</span></li>
+                            <li><span class="badge">PostgreSQL</span></li>
+                            <li><span class="badge">MySQL</span></li>
+                            <li><span class="badge">Python (Pandas)</span></li>
+                            <li><span class="badge">Docker</span></li>
+                            <li><span class="badge">Liquibase</span></li>
+                            <li><span class="badge">n8n</span></li>
+                            <li><span class="badge">APIs REST</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li>
+                    <a href="#" id="contato-link">Contato</a>
+                    <div id="contato-popup" class="hidden">
+                        <p>Redes & Contato:</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/willian-arf/" target="_blank" rel="noopener">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/willian-041" target="_blank" rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="container sobre-container">
+            <div class="foto-perfil">
+                <img src="arquivos/imagemPortfolio.png.png" alt="Foto de Willian Arf" class="imagem-redonda">
+            </div>
+            <div class="texto-sobre">
+                <h2>Olá, seja bem-vindo! 👋</h2>
+                <p>
+                    Sou estudante de <strong>Engenharia de Software</strong> e atuo como <strong>Desenvolvedor Full-Stack</strong>, trabalhando no dia a dia com manutenção e criação de sistemas web corporativos, rotinas de banco de dados e integração de APIs.
+                </p>
+                <p>
+                    No meu trabalho e nos meus estudos, utilizo diariamente tecnologias como <strong>Java, JavaScript, SQL (PostgreSQL/MySQL), Docker e automações com n8n</strong>. Lidar com a estrutura desses sistemas despertou em mim um grande interesse no ciclo de vida da informação.
+                </p>
+                <p class="destaque-dados">
+                    💡 <strong>Transição & Objetivo:</strong> Busco direcionar minha carreira para a <strong>Área de Dados (Análise ou Engenharia de Dados)</strong>. Tenho me aprofundado em manipulação e tratamento de dados com Python (Pandas), construção de pipelines de ETL e modelagem relacional para transformar dados brutos em decisões inteligentes.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills-destaque" class="container">
+            <h2>Habilidades & Tecnologias</h2>
+            <div class="cards-skills">
+                <div class="skill-card">
+                    <h3>Desenvolvimento & Web</h3>
+                    <p>Java, JavaScript, APIs REST, HTML5/CSS3, Git, manipulação de arquivos e regras de negócio corporativas.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Bancos de Dados & SQL</h3>
+                    <p>PostgreSQL, MySQL, consultas complexas (agrupamentos, JOINs), modelagem e controle de migrações com Liquibase.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Dados, Automação & DevOps</h3>
+                    <p>Python (Pandas para ETL e limpeza de CSV/JSON), Docker Compose, Webhooks e fluxos automatizados com n8n.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="container projetos">
+            <h2>Projetos & Experiências</h2>
+            <div class="grid-projetos">
+                <div class="projeto-card">
+                    <h3>Pipeline & Tratamento de Dados em Python</h3>
+                    <p>Script automatizado em Python utilizando Pandas para leitura, validação e higienização de arquivos CSV e carga estruturada em banco PostgreSQL.</p>
+                    <div class="tags">
+                        <span>Python</span> <span>Pandas</span> <span>PostgreSQL</span> <span>ETL</span>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <h3>Ambiente Integrado com Docker & n8n</h3>
+                    <p>Infraestrutura containerizada via Docker Compose combinando banco de dados relacional, migrações com Liquibase e fluxos de automação de dados com n8n.</p>
+                    <div class="tags">
+                        <span>Docker</span> <span>n8n</span> <span>PostgreSQL</span> <span>Liquibase</span>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <h3>Sistemas Web & APIs RESTful</h3>
+                    <p>Desenvolvimento e manutenção de funcionalidades web Full-Stack integrando front-end dinâmico e consumo de endpoints REST seguros.</p>
+                    <div class="tags">
+                        <span>Java</span> <span>JavaScript</span> <span>SQL</span> <span>APIs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Willian Wagner Sentone Arf. Desenvolvido com foco em Engenharia de Software e Dados.</p>
+    </footer>
+
+    <script src="auto.js"></script>
+</body>
+
+</html>
